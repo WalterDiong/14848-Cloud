@@ -1,0 +1,5 @@
+https://hub.docker.com/repository/docker/walterdjs/jupyter
+https://hub.docker.com/repository/docker/walterdjs/sonar_qube_scanner
+https://hub.docker.com/repository/docker/walterdjs/terminal (Container application)
+https://hub.docker.com/repository/docker/walterdjs/hadoop
+https://hub.docker.com/repository/docker/walterdjs/spark
