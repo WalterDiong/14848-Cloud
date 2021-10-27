@@ -2,7 +2,7 @@ import boto3
 import csv
 
 # Setting up connection to aws
-s3 = boto3.resource('s3', aws_access_key_id = 'AKIAXFFFGHKSOHZERMHP', aws_secret_access_key = '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')
+s3 = boto3.resource('s3', aws_access_key_id = '', aws_secret_access_key = '')
 # s3.create_bucket(Bucket='walterdjs-bucket-1', CreateBucketConfiguration={'LocationConstraint': 'us-west-2'})
 
 # Setting up ACL configuration for bucket
@@ -13,7 +13,7 @@ bucket.Acl().put(ACL='public-read')
 # s3.Object('walterdjs-bucket-1', 'test.png').put(Body=open('test.png', 'rb'))
 
 # Create DynamoDB table to store metadata and references to s3 Objects
-dynamo_db = boto3.resource('dynamodb', region_name='us-west-2', aws_access_key_id = 'AKIAXFFFGHKSOHZERMHP', aws_secret_access_key = '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')
+dynamo_db = boto3.resource('dynamodb', region_name='us-west-2', aws_access_key_id = '', aws_secret_access_key = '')
 
 # If creating for the first time
 # table = dynamo_db.create_table(
